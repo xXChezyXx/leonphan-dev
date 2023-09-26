@@ -15,8 +15,8 @@ title = "Bui Anh Minh Leon Phan"
 
 [author]
   name = "Bui Anh Minh Leon Phan"
-  image = "img/test.jpg"
-  headline = "I'm only human"
+  image = "img/Profilbild.jpeg"
+  headline = "Abiturient"
   bio = "A little bit about you"
   links = [
     { email = "mailto:contact@leonphan.dev" },
@@ -39,7 +39,7 @@ title = "Bui Anh Minh Leon Phan"
 #     { keybase = "https://keybase.io/username" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
-    { linkedin = "https://www.linkedin.com/in/bui-anh-minh-leon-phan-265a18254/" },
+    { linkedin = "https://www.linkedin.com/in/bui-anh-minh-leon-phan/" },
 #     { mastodon = "https://mastodon.instance/@username" },
 #     { medium = "https://medium.com/username" },
 #     { microsoft = "https://www.microsoft.com/" },
