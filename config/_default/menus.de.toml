@@ -11,19 +11,8 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Über mich"
-  weight = 10
-
-[[main]]
   name = "Lebenslauf"
-  parent = "Über mich"
-  pageRef = "cv"
-  weight = 10
-
-[[main]]
-  name = "Zertifikate"
-  parent = "Über mich"
-  pageRef = "certs"
+  url =  "https://drive.google.com/file/d/1nEk8Wkw_Z4HQuA_spzLYA4IMjnScLCZq/view?usp=sharing"
   weight = 10
 
 [[main]]

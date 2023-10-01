@@ -2,4 +2,5 @@
 title: "Contact"
 ---
 
-Have a question you want answered? Is there something you would like me to write about on the blog? Just use the form below to reach out to me.   If you are asking about a particular blog entry, please share the URL of the entry you are asking about.
+Du möchtest eine Fragen stellen oder mir einfach so schreiben? Nutze das Kontaktformular, um mich zu erreichen.
+Falls du eine Frage bezüglich eines Posts hast, nenne diese am besten.
