@@ -1,11 +1,11 @@
-languageCode = "de"
-languageName = "Deutsch"
+languageCode = "en"
+languageName = "English"
 weight = 1
 title = "Bui Anh Minh Leon Phan"
 
 [params]
-  displayName = "DE"
-  isoCode = "de"
+  displayName = "EN"
+  isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
   logo = "img/leonphan Profilbild ohne Hintergrund.png"
@@ -16,7 +16,7 @@ title = "Bui Anh Minh Leon Phan"
 [author]
   name = "Bui Anh Minh Leon Phan"
   image = "img/Profilbild.jpeg"
-  headline = "Abiturient"
+  headline = "Highschool student"
   bio = "A little bit about you"
   links = [
     { email = "mailto:contact@leonphan.dev" },

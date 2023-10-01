@@ -1,4 +1,4 @@
 ---
 title: "Bui Anh Minh Leon Phan"
 ---
-Interesse an Informatik und einer besonderen Leidenschaft für Cybersecurity.
+Interest in computer science and a particular passion for cybersecurity.
