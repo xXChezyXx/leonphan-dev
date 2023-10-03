@@ -12,7 +12,7 @@
 
 [[main]]
   name = "CV"
-  url =  "https://drive.google.com/file/d/1nEk8Wkw_Z4HQuA_spzLYA4IMjnScLCZq/view?usp=sharing"
+  url =  "https://leonphan.dev/lebenslauf.pdf"
   weight = 10
 
 [[main]]
@@ -20,10 +20,10 @@
   pageRef = "projects"
   weight = 20
 
-[[main]]
-  name = "Notes"
-  url = "https://notes.leonphan.dev"
-  weight = 30
+#[[main]] Wenn ich studiere, kann das hinzugefügt werden
+#  name = "Notes"
+#  url = "https://notes.leonphan.dev"
+#  weight = 30
 
 [[main]]
   name = "Contact"
