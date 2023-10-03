@@ -1,5 +1,6 @@
 ---
 title: Comments
+categories: Project Architecture
 ---
 
 ## Test

@@ -2,15 +2,16 @@
 title: A Guide to Match Scraping in Tipico
 date: 2023-09-25
 summary: This guide covers scraping match data from the Tipico website, encompassing URL structure, data scraping methods, parameter manipulation, and the JSON data structure.
+tags: ["scraping", "tipico"]
 ---
 
 ## Exploring the Tipico Website
 
-First, let's take a look at the structure of the Tipico website. It has four categories: "All," "Today," "3 Hours," and "48 Hours." However, from the website itself, we can't list all the matches for a specific sport. Instead, we can list all matches for a particular league within that sport. This leads us to the URL structure, which looks like this:
+First, let's take a look at the structure of the Tipico website. It has four categories: ```all```, ```today```, ```3hrs``` and ```48hrs```. However, from the website itself, we can't list all the matches for a specific sport. Instead, we can list all matches for a particular league within that sport. This leads us to the URL structure, which looks like this:
 
 ```https://sports.tipico.de/de/alle/fussball/deutschland/3-liga```
 
-But what if we remove unnecessary details like "deutschland" and "3-liga"? Doing so gives us this link:
+But what if we remove unnecessary details like ```deutschland``` and ```3-liga```? Doing so gives us this link:
 
 ```https://sports.tipico.de/de/alle/fussball/```
 
@@ -28,14 +29,17 @@ We attempt to create a GET request on the URL without headers to see if Tipico b
 
 Now, let's look at the parameters in the URL:
 
-oneSectionResult: Displays matches for the user interface, showing only one section.
-maxMarkets: Specifies the number of markets shown for a match.
-language: Sets the language.
+| parameter   | description |
+|------------|----|
+| oneSectionResult   | Displays matches for the user interface, showing only one section  |
+| basketball | Specifies the number of markets shown for a match  |
+| icehockey  | Sets the language  |
+
 For testing purposes, we'll remove all three parameters:
 
 ```https://sports.tipico.de/json/program/selectedEvents/all/1101```
 
-But what does "1101" mean? We previously chose football as the sport. Let's try selecting a different sport, like basketball. Now a different GET request is sent: 
+But what does ```1101``` mean? We previously chose football as the sport. Let's try selecting a different sport, like basketball. Now a different GET request is sent: 
 
 ```https://sports.tipico.de/json/program/selectedEvents/all/2101```
 
@@ -54,7 +58,8 @@ Only the first digit has changed! From this, we can create a table:
 
 What we receive is a JSON file. The JSON file structure, focusing on the essential attributes, looks like this:
 
-```SELECTION/
+```
+SELECTION/
 ├── ...
 ├── events/
 │   ├── "580284510"/
@@ -74,4 +79,4 @@ What we receive is a JSON file. The JSON file structure, focusing on the essenti
 └── ...
 ```
 
-Each match has a unique ID, in this case, "580284510." In the "events" section, you can find the names of the teams, while the "matchOddGroups" section provides details on different types of bets for each match.
+Each match has a unique ID, in this case, ```580284510```. In the ```events``` section, you can find the names of the teams, while the ```matchOddGroups``` section provides details on different types of bets for each match.
